@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/passStrength"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_password"
+        android:layout_marginLeft="16dp"
+
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/weak"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:buttonTint="#1A99C4"
+            android:text="@string/weak" />
+
+        <RadioButton
+            android:id="@+id/medium"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:buttonTint="#1A99C4"
+            android:text="@string/medium" />
+
+        <RadioButton
+            android:id="@+id/strong"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:buttonTint="#1A99C4"
+            android:text="@string/strong" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif"
+        android:hint="@string/password"
+        android:textSize="40sp" />
+
+    <Button
+        android:theme="@style/PrimaryButton"
+        android:id="@+id/btn_generate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_password"
+        android:fontFamily="sans-serif"
+        android:layout_centerInParent="true"
+        android:text="@string/generate"
+        />
+
+    <Spinner
+        android:id="@+id/passSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_generate"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="11dp" />
+
+</RelativeLayout>

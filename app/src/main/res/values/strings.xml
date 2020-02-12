@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PasswordGenerator</string>
+    <string name="generate">Generate</string>
+    <string name="password">Password</string>
+    <string name="strong">Strong</string>
+    <string name="weak">Weak</string>
+    <string name="medium">Medium</string>
+</resources>
